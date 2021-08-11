@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaarina Nieminen</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/db17d03140.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!-- navigation bar built through https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci -->
+        <nav class="navBar">
+            <h3 class="logo">kaarina.ca</h2>
+            <ul class="navMenu">
+                <li class="navItem">
+                    <a href="#" class="navLink">About</a>
+                </li>
+                <li class="navItem">
+                    <a href="#" class="navLink">Blog</a>
+                </li>
+                <li class="navItem">
+                    <a href="#" class="navLink">Work</a>
+                </li>
+                <li class="navItem">
+                    <a href="#" class="navLink">Contact</a>
+                </li>
+            </ul>  
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>  
+        </nav>
+        <!-- <h1>Kaarina Nieminen</br> <span>Web Developer</span></h1> -->
+        <!-- https://css-tricks.com/the-shapes-of-css/ -->
+        <div class="oval"></div>
+        <h1>Kaarina Nieminen</br> <span>Web Developer</span></h1>
+    </header>
+    <main>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul class="skillsList">
+                <li><i class="fab fa-html5"></i></li>
+                <li><i class="fab fa-css3-alt"></i></li>
+                <li><i class="fab fa-sass"></i></li>
+                <li><i class="fab fa-js-square"></i></li>
+                <li><i class="fab fa-react"></i></li>
+                <li><i class="fab fa-github-square"></i></li>
+            </ul>
+        </section>
+
+        <section class="about">
+            <div class="wrapper">
+                <h2>about</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, minima excepturi, accusantium ullam inventore ipsam magnam sapiente quas aperiam voluptates culpa. Nemo nihil sed maxime?</p>
+            </div>
+        </section>
+
+
+        <section class="projects">
+            <div class="carouselWrapper">
+                <div class="carousel">
+                    <img class="carouselPhoto initial" src="./assets/mindnSoul.png">
+                    <img class="carouselPhoto" src="./assets/critterCatcher.png">
+                    <img class="carouselPhoto" src="./assets/katsella.png">
+                    <img class="carouselPhoto" src="./assets/timeless.png">
+
+                    <div class="carouselButtonNext"></div>
+                    <div class="carouselButtonPrevious"></div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script> 
+</body>
+</html>
