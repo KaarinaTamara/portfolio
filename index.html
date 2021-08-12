@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaarina Nieminen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/db17d03140.js" crossorigin="anonymous"></script>
 </head>
@@ -40,7 +43,7 @@
     </header>
     <main>
         <section class="skills">
-            <h4>What Do I know?</h4>
+            <h4>What Do I Know?</h4>
             <h2>Skills</h2>
             <ul class="skillsList">
                 <li>
@@ -60,7 +63,7 @@
                 <h2>About</h2>
                     <div class="aboutInfo">
                         <img src="./assets/me.jpg" class="aboutImg">
-                        <p>Welcome! My name is Kaarina and I want to thank you for checking out my web dev portfolio, I hope this shows you how capable I am to fulfill all your web development needs.</br></br>
+                        <p class="aboutText">Welcome! My name is Kaarina and I want to thank you for checking out my web dev portfolio, I hope this shows you how capable I am to fulfill all your web development needs.</br></br>
 
                         I am a recent graduate of Juno College's immersive bootcamp. Through this opportunity, I have been able to create a variety of responsive and accessible sites both as solo assignments and in collaboration with others. Check out my projects section below to see some of the exciting work I've been involved with so far! </br></br>
 
@@ -79,6 +82,7 @@
 
 
         <section class="projects">
+            <h4>What Have I Done?</h4>
             <h2>Projects</h2>
             <div class="carousel-wrapper">
                 <div class="carousel">
@@ -96,28 +100,52 @@
         </section>
 
         <section class="contact">
+            <h4>Want To Chat?</h4>
+            <h2>Contact me!</h2>
+            
             <div class="wrapper">
-                <h2>Contact me!</h2>
+
                 <div class="contactForm">
-                    <p>Want to chat about what you've seen here? Drop me a line below and I'm more than happy to discuss further!</p>
+                    <p>Want to chat about what you've seen here? Drop me a line below and I'm more than happy to discuss further</p>
 
                     <form target="_blank" action="https://formsubmit.co/kaarina.ca@outlook.com" method="POST">
                         <input type="text" class="name" placeholder="Name">
 
                         <input type="email" class="email" placeholder="Email">
 
-                        <textarea class="message" placeholder="Type your message here"></textarea>
+                        <textarea class="message" placeholder="Type your message here" rows="8"></textarea>
+                        <button type="submit">Send</button>
                     </form>
+                </div>
+                <div class="contactOther">
+                    <p>Or contact me through other means</p>
+                    <ul class="contactOtherFA">
+                        <li>
+                            <a href="https://twitter.com/kaarina_aniraak"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://junocollege.slack.com/U01N5TW4U3Z"><i class="fab fa-slack"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/KaarinaTamara"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="tel:+1-647-986-3997"><i class="fas fa-mobile"></i></a>
+                        </li>
+                        <li>
+                            <a href="mailto:kaarina.ca@outlook.com"><i class="fas fa-envelope"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/kaarina-nieminen-7392a61a6/"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section class="end">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum blanditiis ullam aliquid veniam iste. Fugit consectetur, sunt rerum, officia doloremque dolores quisquam expedita amet unde atque vitae voluptatum veritatis soluta magni, ut odio. Totam odit, tenetur eos distinctio numquam possimus facilis deleniti fugiat, omnis nisi voluptate. Quos eum quia repellendus delectus similique eligendi fuga beatae facere quidem explicabo est vel, cumque rem mollitia sint natus nesciunt aspernatur dolores amet? Perferendis quia, ad necessitatibus suscipit excepturi, saepe, sunt quaerat obcaecati nulla assumenda tempore exercitationem omnis praesentium sapiente harum! Pariatur, quasi voluptate quas a eum aut mollitia sequi enim libero explicabo quos.</p>
-        </section>
     </main>
     <footer>
-
+        <p>Created by Kaarina Nieminen</p>
     </footer>
 
     <script src="script.js"></script> 
