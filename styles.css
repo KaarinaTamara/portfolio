@@ -15,7 +15,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     margin: 0; 
     padding: 0; 
     box-sizing: box-border;  
-    overflow-x: hidden;
 }
 
 html {
@@ -28,7 +27,7 @@ header {
     background: rgb(0,0,75);
     background: linear-gradient(0deg, rgba(0,0,75,1) 0%, rgba(161,45,96,1) 100%); 
     height: 85vh; 
-    overflow-y: hidden; 
+    overflow: hidden; 
 }
 
 .logo {
@@ -270,7 +269,6 @@ p {
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
     overflow: hidden; 
-    /* overflow hidden is worst case scenario fix for the additional scroll. try to play with height and padding in other divs first otherwise, use this */
   }
   
   .carouselPhoto {
