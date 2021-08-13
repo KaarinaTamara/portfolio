@@ -15,19 +15,19 @@
     <header>
         <!-- navigation bar built through https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci -->
         <nav class="navBar">
-            <h3 class="logo">kaarina.ca</h2>
+            <h4 class="logo">kaarina.ca</h4>
             <ul class="navMenu">
                 <li class="navItem">
-                    <a href="#" class="navLink">About</a>
+                    <a href="#about" class="navLink">About</a>
                 </li>
                 <li class="navItem">
-                    <a href="#" class="navLink">Blog</a>
+                    <a href="https://kaarina-aniraak.medium.com/" target="_blank" class="navLink">Blog</a>
                 </li>
                 <li class="navItem">
-                    <a href="#" class="navLink">Work</a>
+                    <a href="#projects" class="navLink">Projects</a>
                 </li>
                 <li class="navItem">
-                    <a href="#" class="navLink">Contact</a>
+                    <a href="#contact" class="navLink">Contact</a>
                 </li>
             </ul>  
             <div class="hamburger">
@@ -43,64 +43,93 @@
     </header>
     <main>
         <section class="skills">
-            <h4>What Do I Know?</h4>
+            <h3>What Do I Know?</h3>
             <h2>Skills</h2>
             <ul class="skillsList">
-                <li>
-                <i class="fab fa-html5"></i>
-                </li>
+                <li><i class="fab fa-html5"></i></li>
                 <li><i class="fab fa-css3-alt"></i></li>
                 <li><i class="fab fa-sass"></i></li>
                 <li><i class="fab fa-js-square"></i></li>
                 <li><i class="fab fa-react"></i></li>
                 <li><i class="fab fa-github-square"></i></li>
+                <li><i class="fas fa-file-word"></i></li>
+                <li><i class="fas fa-code-branch"></i></li>                
             </ul>
         </section>
 
         <section class="about">
             <div class="wrapper">
-                <h4>Who Am I?</h4>
+                <h3 id="about">Who Am I?</h3>
                 <h2>About</h2>
                     <div class="aboutInfo">
-                        <img src="./assets/me.jpg" class="aboutImg">
+                        <img src="./assets/me.jpg" class="aboutImg" alt="Image shows Kaarina in a floral top staring at the camera and smiling">
                         <p class="aboutText">Welcome! My name is Kaarina and I want to thank you for checking out my web dev portfolio, I hope this shows you how capable I am to fulfill all your web development needs.</br></br>
 
                         I am a recent graduate of Juno College's immersive bootcamp. Through this opportunity, I have been able to create a variety of responsive and accessible sites both as solo assignments and in collaboration with others. Check out my projects section below to see some of the exciting work I've been involved with so far! </br></br>
 
-                        Make sure you return here to see more work in the future. I, and this portfolio, are constantly growing!</br></br>
+                        Having spent the last 11 years in telecommunication sales I am beyond excited to head straight into this exciting career change in the world of web development. I am passionate about providing fun, interactive and accessible websites and to find my place in a world where I can celebrate diversity and inclusion. I work best with a team and strive for conflict resolution no matter the circumstances.</br></br>
 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sit sequi odit! Facere, sed cupiditate laudantium porro ratione voluptates non earum pariatur esse laborum consequatur ipsam, quas accusamus, magni aperiam!</br></br>
-
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita iusto similique illo numquam accusantium, debitis sit earum quidem doloribus laudantium ea itaque doloremque? Ipsum earum consectetur delectus obcaecati accusantium modi!</br></br>
-                        
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam corrupti maiores deleniti! Alias iste placeat facilis eum debitis sint corporis veniam eligendi beatae, quo officiis dolores id ad nostrum esse rem distinctio? Quas debitis unde suscipit, nobis distinctio numquam eius?</br></br>
+                        Make sure you return here to see more work in the future. I, and this portfolio, are constantly growing!
                         </p>
 
                     </div>
             </div>
         </section>
 
-
         <section class="projects">
-            <h4>What Have I Done?</h4>
+            <h3 id="projects">What Have I Done?</h3>
             <h2>Projects</h2>
-            <div class="carousel-wrapper">
+            <div class="carouselWrapper">
                 <div class="carousel">
-
-                <img class="carousel__photo initial" src="./assets/mindnSoul.png">
-                <img class="carousel__photo" src="./assets/critterCatcher.png">
-                <img class="carousel__photo" src="./assets/katsella.png">
-                <img class="carousel__photo" src="./assets/timeless.png">
                 
-                <div class="carousel__button--next"></div>
-                <div class="carousel__button--prev"></div>
+                    <a href="https://unruffled-austin-468c88.netlify.app/"><img class="carouselPhoto initial" src="./assets/mindnSoul.png" alt="Images shows a screengrab of the MindnSoul Site"></a>
+                    
+                    <a href="https://upbeat-knuth-3b3fe4.netlify.app/"><img class="carouselPhoto" src="./assets/critterCatcher.png" alt="Image shows a screengrab of the Critter Catcher app"></a>
+                    
+                    <a href="https://dazzling-morse-a46f6c.netlify.app/"><img class="carouselPhoto" src="./assets/katsella.png" alt="Image shows a screengrab of the critter Katsella app"></a>
+                    
+                    <a href="https://zealous-murdock-996289.netlify.app/"><img class="carouselPhoto" src="./assets/timeless.png" alt="Image shows a screengrab of the Timeless app"></a>
+                    
+                <div class="carouselButtonNext"></div>
+                <div class="carouselButtonPrev"></div>
 
+                </div>
+            </div>
+            <div class="projectDescription">
+                <div class="mindnSoul">
+                    <h3>MindnSoul</h3>
+                    <p>HTML | SCSS | JavaScript</p>
+                    <p>Responsive website for a wellness retreat, built using client provided design</p></br>
+                    <a href="https://unruffled-austin-468c88.netlify.app/">LIVE</a> <i class="far fa-circle"></i> <a href="https://github.com/KaarinaTamara/kaarinaNieminenProject1" target="_blank">GITHUB</a>
+                </div>
+
+                <div class="critterCatcher">
+                    <h3>Critter Catcher</h3>
+                    <p>HTML | SCSS | JavaScript | API</p>
+                    <p>In partnership with one other developer created and built a fun and interractive application for players of Animal Crossing: New Horizons. App allows users to provide information and returns critter availability</p>
+                    <a href="https://upbeat-knuth-3b3fe4.netlify.app/">LIVE</a> <i class="far fa-circle"></i> <a href="https://github.com/CritterFinder/CritterFinderApp" target="_blank">GITHUB</a>
+
+                </div>
+
+                <div class="katsella">
+                    <h3>Katsella</h3>
+                    <p>HTML | CSS | React | Firebase
+                    </p>
+                    <p>Social media application that allows users to create, store and share program recommondation and watch lists amongst friends</p>
+                    <a href="https://dazzling-morse-a46f6c.netlify.app/">LIVE</a> <i class="far fa-circle"></i> <a href="https://github.com/KaarinaTamara/katsella" target="_blank">GITHUB</a>
+                </div>
+
+                <div class="timeless">
+                    <h3>Timeless</h3>
+                    <p>HTML | CSS | React | RESTful API </p>
+                    <p>With a team of three other developers built an application that allows users to book meeting times for attendees in up to three different timezones, staying within working hours for all</p>
+                    <a href="https://zealous-murdock-996289.netlify.app/">LIVE</a> <i class="far fa-circle"></i> <a href="https://github.com/JunoProject4" target="_blank">GITHUB</a>
                 </div>
             </div>
         </section>
 
         <section class="contact">
-            <h4>Want To Chat?</h4>
+            <h3 id="contact">Want To Chat?</h3>
             <h2>Contact me!</h2>
             
             <div class="wrapper">
@@ -108,7 +137,7 @@
                 <div class="contactForm">
                     <p>Want to chat about what you've seen here? Drop me a line below and I'm more than happy to discuss further</p>
 
-                    <form target="_blank" action="https://formsubmit.co/kaarina.ca@outlook.com" method="POST">
+                    <form target="_blank" action="https://formsubmit.co/kaarina.ca@outlook.com" method="POST" data-netlify="true">
                         <input type="text" class="name" placeholder="Name">
 
                         <input type="email" class="email" placeholder="Email">
@@ -121,22 +150,22 @@
                     <p>Or contact me through other means</p>
                     <ul class="contactOtherFA">
                         <li>
-                            <a href="https://twitter.com/kaarina_aniraak"><i class="fab fa-twitter"></i></a>
+                            <a href="https://twitter.com/kaarina_aniraak" target="_blank" aria-label="Go to Kaarina's Twitter"><i aria-hidden="true" class="fab fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a href="https://junocollege.slack.com/U01N5TW4U3Z"><i class="fab fa-slack"></i></a>
+                            <a href="https://junocollege.slack.com/U01N5TW4U3Z" target="_blank" aria-label="Go to Kaarina's Slack profile"><i aria-hidden="true" class="fab fa-slack"></i></a>
                         </li>
                         <li>
-                            <a href="https://github.com/KaarinaTamara"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/KaarinaTamara" target="_blank" aria-label="Go to Kaarina's GitHub"><i aria-hidden="true" class="fab fa-github"></i></a>
                         </li>
                         <li>
-                            <a href="tel:+1-647-986-3997"><i class="fas fa-mobile"></i></a>
+                            <a href="tel:+1-647-986-3997" target="_blank" aria-label="Contact Kaarina by mobile"><i aria-hidden="true" class="fas fa-mobile"></i></a>
                         </li>
                         <li>
-                            <a href="mailto:kaarina.ca@outlook.com"><i class="fas fa-envelope"></i></a>
+                            <a href="mailto:kaarina.ca@outlook.com" target="_blank" aria-label="Send Kaarina an email"><i aria-hidden="true" class="fas fa-envelope"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/kaarina-nieminen-7392a61a6/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/kaarina-nieminen-7392a61a6/" target="_blank" aria-label="Go to Kaarina's LinkedIn"><i aria-hidden="true" class="fab fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -145,7 +174,7 @@
 
     </main>
     <footer>
-        <p>Created by Kaarina Nieminen</p>
+        <p>Created by Kaarina Nieminen at <a href="https://junocollege.com/">Juno College ©</a></p>
     </footer>
 
     <script src="script.js"></script> 
