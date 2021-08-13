@@ -24,7 +24,7 @@ function closeMenu() {
 
 !(function(d){
     
-    const itemClassName = "carousel__photo";
+    const itemClassName = "carouselPhoto";
         items = d.getElementsByClassName(itemClassName),
         totalItems = items.length,
         slide = 0,
@@ -43,8 +43,8 @@ function closeMenu() {
     // Set click events to navigation buttons
   
     function setEventListeners() {
-      var next = d.getElementsByClassName('carousel__button--next')[0],
-          prev = d.getElementsByClassName('carousel__button--prev')[0];
+      var next = d.getElementsByClassName('carouselButtonNext')[0],
+          prev = d.getElementsByClassName('carouselButtonPrev')[0];
   
       next.addEventListener('click', moveNext);
       prev.addEventListener('click', movePrev);
