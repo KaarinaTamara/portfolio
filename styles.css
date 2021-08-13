@@ -195,6 +195,7 @@ p {
     flex-direction: row; 
     color: #fff; 
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .skillsList i {
@@ -594,5 +595,21 @@ p {
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media (max-width: 440px) {
+    h1 {
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    .aboutImg {
+        height: 200px;
+        width: 200px;
     }
 }
