@@ -253,111 +253,16 @@ p {
 }
 
 /* PROJECTS */
-
-.carouselWrapper {
-    overflow: auto;
-    width: 90%;
-    margin: auto;
-    height: auto; 
-  }
-  
-  .carouselWrapper * {
-    box-sizing: border-box;
-  }
-  
-  .carousel {
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    overflow: hidden; 
-  }
-  
-  .carouselPhoto {
-    opacity: 0;
-    position: absolute;
-    top:0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: 0 auto;
-    padding: 1rem 4rem;
-    z-index: 70;
-    transition: transform .5s, opacity .5s, z-index .5s;
-  }
-  
-  .carouselPhoto.initial,
-  .carouselPhoto.active {
-    opacity: 1;
-    position: relative;
-    z-index: 90;
-  }
-  
-  .carouselPhoto.prev,
-  .carouselPhoto.next {
-    z-index: 80;
-  }
-  
-  .carouselPhoto.prev {
-    transform: translateX(-100%);
-  }
-  
-  .carouselPhoto.next {
-    transform: translateX(100%);
-  }
-  
-  .carouselButtonPrev,
-  .carouselButtonNext {
-    position: absolute;
-    top:50%;
-    width: 5rem;
-    height: 5rem;
-    margin: 2rem;
-    background-color: #EC395F;
-    color: #fff;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    cursor: pointer; 
-    z-index: 100;
-  }
-
-  .carouselButtonPrev:hover,
-  .carouselButtonPrev:focus,
-  .carouselButtonNext:hover,
-  .carouselButtonNext:focus {
-      background-color:#ee718c;
-  }
-  
-  .carouselButtonPrev {
-    left:0;
-  }
-  
-  .carouselButtonNext {
-    right:0;
-  }
-  
-  .carouselButtonPrev::after,
-  .carouselButtonNext::after {
-    content: " ";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: 50%;
-    left: 54%;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-    transform: translate(-50%, -50%) rotate(135deg);
-  }
-  
-  .carouselButtonNext::after {
-    left: 47%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
+    .projects img {
+        width: 100%;
+        border-radius: 15px; 
+    }
 
   .projectDescription {
       display: flex; 
       flex-direction: row;
       justify-content: space-around;
+      align-content: center; 
       flex-wrap: wrap; 
       color: white; 
   }
@@ -380,7 +285,7 @@ p {
   }
 
   .mindnSoul, 
-  .critterCatcher,
+  .critterFinder,
   .katsella, 
   .timeless {
       width: 40%;
@@ -536,7 +441,7 @@ p {
     }
 
     .mindnSoul,
-    .critterCatcher,
+    .critterFinder,
     .katsella,
     .timeless {
         margin: 1rem auto; 
