@@ -149,11 +149,11 @@ span {
 
 /* MAIN */
 
-main {
+/* main {
     content: "";
     background-image: url(./assets/background1.jpg); 
     opacity: 0.5; 
-}
+} */
 
 .wrapper {
     width: 90%;
