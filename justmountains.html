@@ -1,0 +1,64 @@
+<!-- this is the code for when i did just individual mountains. only two mountains before i tried something different -->
+
+<!-- MOUNTAINS -->
+<div class="mountain1"></div>
+<div class="mountain1Shadow"></div>
+
+<div class="mountain2"></div>
+<div class="mountain2Shadow"></div>
+
+<style>
+    /* MOUNTAINS STYLING */
+    .mountain1 {
+        position: absolute; 
+        content: '';
+        bottom: 0; 
+        left: 20px; 
+        border-top: 0 solid transparent;
+        border-left: 180px solid transparent;
+        border-right: 180px solid transparent; 
+        border-bottom: 350px solid #041584; /*this is the height of the mountain*/
+        z-index: 5; 
+    }
+    
+    .mountain1Shadow {
+        position: absolute; 
+        content: '';
+        bottom: 0; 
+        left: 200px; /*we achieved this number by adding the left position to the border left amounts on the mountain*/
+        border-top: 0 solid transparent; 
+        border-right: 140px solid transparent;
+        border-bottom: 350px solid #020d55;
+        border-left: 0 solid transparent; 
+        z-index: 5;
+        transform-origin: top right;
+        transform: skewX(18deg);
+    }
+    
+    .mountain2 {
+        position: absolute; 
+        content: '';
+        bottom: 0; 
+        left: 310px; 
+        border-top: 0 solid transparent;
+        border-left: 120px solid transparent;
+        border-right: 120px solid transparent; 
+        border-bottom: 150px solid #041584;
+        z-index: 10; 
+    }
+    
+    .mountain2Shadow {
+        position: absolute; 
+        content: '';
+        bottom: 0; 
+        left: 430px;
+        border-top: 0 solid transparent; 
+        border-right: 140px solid transparent;
+        border-bottom: 150px solid #020d55;
+        border-left: 0 solid transparent; 
+        z-index: 10;
+        transform-origin: top right;
+        transform: skewX(10deg);
+    }
+
+</style>

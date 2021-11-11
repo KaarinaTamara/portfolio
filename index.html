@@ -7,7 +7,7 @@
     <title>Kaarina Nieminen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Mr+Dafoe&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/db17d03140.js" crossorigin="anonymous"></script>
 </head>
@@ -36,36 +36,40 @@
                 <span class="bar"></span>
             </div>  
         </nav>
-        <!-- <h1>Kaarina Nieminen</br> <span>Web Developer</span></h1> -->
-        <!-- https://css-tricks.com/the-shapes-of-css/ -->
-        <div class="oval"></div>
-        <h1>Kaarina Nieminen</br> <span>Web Developer</span></h1>
+        <div class="headerTitle">
+            <h1>KAARINA</h1>
+            <h2 class="headerH2">Web Developer</h2>
+            <div class="headerLogo">
+                    <svg height="600" width="800" margin="0 auto" display="inline-block" class="triangle">
+                        <polygon points="250, 10 800, 400 20, 250" class="centerTriangle;"
+                        style="overflow: visible; 
+                        fill: rgba(201, 91, 223, 0.733);
+                         stroke:rgba(201, 91, 223, 0.733); stroke-width:5; z-index: 10; position: absolute;" />
+                        <svg height="600" width="800" margin="0 auto" display="inline-block" class="triangle">
+                            <polygon points="250, 10 800, 400 20, 250" transform="translate(800,0) scale(-1, 1)" class="triangle2;"
+                            style="overflow: visible; fill:transparent; stroke: rgb(8, 227, 235); stroke-width:5; z-index: 10; position: absolute;" />
+                        </svg>
+                    </svg>
+            </div> 
+
+        </div>    
+        
     </header>
     <main>
-        <section class="skills">
-            <h3>What Do I Know?</h3>
-            <h2>Skills</h2>
-            <ul class="skillsList">
-                <li><i class="fab fa-html5"></i></li>
-                <li><i class="fab fa-css3-alt"></i></li>
-                <li><i class="fab fa-sass"></i></li>
-                <li><i class="fab fa-js-square"></i></li>
-                <li><i class="fab fa-react"></i></li>
-                <li><i class="fab fa-github-square"></i></li>
-                <li><i class="fas fa-file-word"></i></li>
-                <li><i class="fas fa-code-branch"></i></li>                
-            </ul>
-        </section>
+        
+        <div class="glowingBorder"></div>
 
         <section class="about">
             <div class="wrapper">
-                <h3 id="about">Who Am I?</h3>
                 <h2>About</h2>
                     <div class="aboutInfo">
-                        <img src="./assets/me.jpg" class="aboutImg" alt="Image shows Kaarina in a floral top staring at the camera and smiling">
-                        <p class="aboutText">Welcome! My name is Kaarina and I want to thank you for checking out my web dev portfolio, I hope this shows you how capable I am to fulfill all your web development needs.</br></br>
+                        <div class="polaroid">
+                            <img src="assets/me.jpg" class="aboutImg" alt="Image shows a screen grab of the Mindn'Soul homepage">
+                            <div class="caption">Is that a super model?<br> Nope, just me!</div>
+                        </div>
+                        <p class="aboutText">Welcome! My name is Kaarina Nieminen and I want to thank you for checking out my web dev portfolio, I hope this shows you how capable I am to fulfill all your web development needs.</br></br>
 
-                        I am a recent graduate of Juno College's immersive bootcamp. Through this opportunity, I have been able to create a variety of responsive and accessible sites both as solo assignments and in collaboration with others. Check out my projects section below to see some of the exciting work I've been involved with so far! </br></br>
+                        I am a recent graduate of Juno College's Immersive Bootcamp. Through this opportunity, I have been able to create a variety of responsive and accessible sites both as solo assignments and in collaboration with others. Check out my projects section below to see some of the exciting work I've been involved with so far! </br></br>
 
                         Having spent the last 11 years in telecommunication sales I am beyond excited to head straight into this exciting career change in the world of web development. I am passionate about providing fun, interactive and accessible websites and to find my place in a world where I can celebrate diversity and inclusion. I work best with a team and strive for conflict resolution no matter the circumstances.</br></br>
 
@@ -73,57 +77,100 @@
                         </p>
 
                     </div>
+
+                    <!-- <div class="skills">
+                            <h2>Skills</h2>
+                            <ul class="skillsList">
+                                
+                                <li>
+                                    <i class="fab fa-html5"></i>
+                                </li>
+
+                                <li><i class="fab fa-css3-alt"></i></li>
+                                <li><i class="fab fa-sass"></i></li>
+                                <li><i class="fab fa-js-square"></i></li>
+                                <li><i class="fab fa-react"></i></li>
+                                <li><i class="fab fa-github-square"></i></li>
+                                <li><i class="fas fa-file-word"></i></li>
+                                <li><i class="fas fa-code-branch"></i></li>                
+                            </ul>
+                    </div>  -->
+                    
             </div>
+
+
         </section>
 
+
         <section class="projects">
-            <h3 id="projects">What Have I Done?</h3>
+            <!-- https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671 -->
             <h2>Projects</h2>
-    
-            <div class="projectDescription">
-                <div class="mindnSoul">
-                    <img src="./assets/mindnSoul.png" alt="Image shows a screen grab of the MindnSoul website">
-                    <h3>MindnSoul</h3>
-                    <p>HTML | SCSS | JavaScript</p>
-                    <p>Responsive website for a wellness retreat, built using client provided design</p></br>
-                    <a href="https://unruffled-austin-468c88.netlify.app/">LIVE</a> <i class="far fa-circle"></i> <a href="https://github.com/KaarinaTamara/kaarinaNieminenProject1" target="_blank">GITHUB</a>
-                </div>
 
-                <div class="critterFinder">
-                    <img src="./assets/critterCatcher.png" alt="Image shows a screen grab of the Critter Finder website">
+            <div class="project jsScroll slideLeft">
+                <div class="polaroid">
+                    <img src="assets/mindnSoul.png" alt="Image shows a screen grab of the Mindn'Soul homepage">
+                    <div class="caption">Mindn'Soul<br>
+                        <div class="captionLinks">
+                            <a href="https://app.netlify.com/sites/unruffled-austin-468c88/overview" class="captionLink">Live</a><a href="https://github.com/KaarinaTamara/kaarinaNieminenProject1">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projectText">
+                    <h3>Mindn'Soul</h3>
+                    <p class="mindnSoulText">HTML | SCSS | JavaScript<br>With design elements provided by the client created an accessible and responsive website for a wellness retreat. Website includes multiple pages, a comment form, and accessible elements to ensure the site can be viewed by those with different abilities.</p>
+                </div>
+             </div>
+            
+        
+            <div class="project jsScroll slideRight">
+                <div class="projectText">
                     <h3>Critter Finder</h3>
-                    <p>HTML | SCSS | JavaScript | API</p>
-                    <p>In partnership with one other developer created and built a fun and interractive application for players of Animal Crossing: New Horizons. App allows users to provide information and returns critter availability</p>
-                    <a href="https://upbeat-knuth-3b3fe4.netlify.app/">LIVE</a> <i class="far fa-circle"></i> <a href="https://github.com/CritterFinder/CritterFinderApp" target="_blank">GITHUB</a>
-
+                    <p class="critterCatcherText">HTML | SCSS | JavaScript | API<br>In partnership with another developer created, designed and built the Critter Finder app for players of Animal Crossing: New Horizons. Critter Finder allows the user to enter their location and current time and with the help of an API information is returned informing what critters are available to be found and caught.</p>
                 </div>
-
-                <div class="katsella">
+                <div class="polaroid">
+                    <img src="assets/critterCatcher.png" alt=
+                    "Image shows the landing page of the Critter Finder website">
+                    <div class="caption">Critter Finder</div>
+                    <div class="captionLinks">
+                        <a href="https://upbeat-knuth-3b3fe4.netlify.app/" class="captionLink">Live</a><a href="https://github.com/CritterFinder/CritterFinderApp">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="project jsScroll slideLeft">
+                <div class="polaroid">
+                    <img src="assets/katsella.png" alt="Image shows screen grab of the Katsella social media app landing page">
+                    <div class="caption">Katsella</div>
+                    <div class="captionLinks">
+                        <a href="https://dazzling-morse-a46f6d.netlify.app/" class="captionLink">Live</a><a href="https://github.com/KaarinaTamara/katsella">GitHub</a>
+                    </div>
+                </div>
+                <div class="projectText">
                     <h3>Katsella</h3>
-                    <img src="./assets/katsella.png" alt="Image shows screengrab of the Katsella website">
-                    <p>HTML | CSS | React | Firebase
-                    </p>
-                    <p>Social media application that allows users to create, store and share program recommondation and watch lists amongst friends</p>
-                    <a href="https://dazzling-morse-a46f6d.netlify.app/">LIVE</a> <i class="far fa-circle"></i> <a href="https://github.com/KaarinaTamara/katsella" target="_blank">GITHUB</a>
+                    <p class="katsellaText">HTML | CSS | React | Firebase<br>Katsella is a social media based application to share movie and tv show recommendations amongst your friends. The name Katsella is a Finnish word for "watch", this combines both my Finnish heritage and Juno College's love for Godzilla. And this is why we see the cat-Godzilla hybrid mascot on the home page. Using Google's Firebase to store and update the users inputs in real time this app allows you to suggest shows to friends and leave comments and ratings for anyone who has access to your personalized list.</p>
                 </div>
-
-                <div class="timeless">
+            </div>
+        
+            <div class="project jsScroll slideRight">
+                <div class="projectText">
                     <h3>Timeless</h3>
-                    <img src="./assets/timeless.png" alt="Image shows the screengrab of the Timeless website">
-                    <p>HTML | CSS | React | RESTful API </p>
-                    <p>With a team of three other developers built an application that allows users to book meeting times for attendees in up to three different timezones, staying within working hours for all</p>
-                    <a href="https://zealous-murdock-996289.netlify.app/">LIVE</a> <i class="far fa-circle"></i> <a href="https://github.com/JunoProject4" target="_blank">GITHUB</a>
+                    <p class="timelessText">HTML | CSS | JavaScript | RESTful API<br>Timeless was built with a development team of four creaters. The app is the ultimate meeting planner for any professional. It allows you to select meeting times for various attendees, including those in different timezones. When working with those in varying timezones the app also takes the time changes into account and ensures a time is selected that falls between 8am to 7pm in the attendees own area. Once a meeting is booked, all attendees can view, edit and book any other necessary meetings.</p>
+
+                </div>
+                <div class="polaroid">
+                    <img src="assets/timeless.png" alt="Image shows a screengrab of the landing page for the Timeless app">
+                    <div class="caption">Timeless</div>
+                    <div class="captionLinks">
+                        <a href="https://zealous-murdock-996289.netlify.app/" class="captionLink">Live</a><a href="https://github.com/JunoProject4">GitHub</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="contact">
-            <h3 id="contact">Want To Chat?</h3>
-            <h2>Contact me!</h2>
-            
-            <div class="wrapper">
 
                 <div class="contactForm">
+                    <h2>Contact me!</h2>
                     <p>Want to chat about what you've seen here? Drop me a line below and I'm more than happy to discuss further</p>
 
                     <form target="_blank" action="https://formsubmit.co/kaarina.ca@outlook.com" method="POST" data-netlify="true">
@@ -134,8 +181,7 @@
                         <textarea class="message" placeholder="Type your message here" rows="8" style="resize:none"></textarea>
                         <button type="submit">Send</button>
                     </form>
-                </div>
-                <div class="contactOther">
+
                     <p>Or contact me through other means</p>
                     <ul class="contactOtherFA">
                         <li>
@@ -157,7 +203,10 @@
                             <a href="https://www.linkedin.com/in/kaarina-nieminen-7392a61a6/" target="_blank" aria-label="Go to Kaarina's LinkedIn"><i aria-hidden="true" class="fab fa-linkedin"></i></a>
                         </li>
                     </ul>
+               
                 </div>
+
+                
             </div>
         </section>
 
