@@ -722,9 +722,10 @@ p {
         font-size: 9rem;
     }
 
-    h2 {
-        font-size: 6rem; 
-    }
+   .headerH2 {
+       font-size: 8rem;
+       top: 45%;
+   }
 
     .project {
         display: flex; 
@@ -742,8 +743,6 @@ p {
         box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
         width: 300px; 
         margin: 1.8rem auto; 
-        border: 3px solid red; 
-        
     }
 
     .polaroid > img {
@@ -753,7 +752,29 @@ p {
     }
 
     .wrapper {
-        width: 80%; 
+        width: 90%; 
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 715px) {
+    .aboutInfo > .polaroid {
+        margin: 0 auto
+    }
+}
+
+@media (max-width: 520px) {
+    h1 {
+        font-size: 7rem;
+    }
+
+    .headerH2,
+    h2 {
+        font-size: 6rem;
+    }
+
+    .aboutInfo .polaroid {
+        float: none; 
         margin: 0 auto;
     }
 }
