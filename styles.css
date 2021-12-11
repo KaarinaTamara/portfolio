@@ -318,10 +318,6 @@ p {
     margin: 3rem;
 }
 
-.aboutImg {
-    filter: saturate(40%);
-}
-
 .aboutInfo .caption {
     color: black; 
     line-height: 3rem;
@@ -554,7 +550,8 @@ p {
     0% {
         left: -30px;
         top: 8px;
-        opacity: 0;}
+        opacity: 0;
+    }
       
       15% {
         left: -30px;
@@ -644,6 +641,10 @@ p {
         opacity: 0;}
 }
 
+@media(max-width: 450px) {
+    
+}
+
 /* animation on the project slide */
 
 @keyframes slideInLeft {
@@ -727,6 +728,12 @@ p {
        top: 45%;
    }
 
+}
+
+@media (max-width: 915px) {
+
+
+
     .project {
         display: flex; 
         flex-direction: column; 
@@ -741,13 +748,13 @@ p {
         background-color: #fff;
         padding: 2rem;
         box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
-        width: 300px; 
+        /* width: 80%;  */
         margin: 1.8rem auto; 
     }
 
     .polaroid > img {
-        width: 250px;
-        height: 250px;
+        /* width: 250px;
+        height: 250px; */
         margin: 0 auto; 
     }
 
@@ -757,11 +764,7 @@ p {
     }
 }
 
-@media (max-width: 715px) {
-    .aboutInfo > .polaroid {
-        margin: 0 auto
-    }
-}
+
 
 @media (max-width: 520px) {
     h1 {
@@ -776,5 +779,61 @@ p {
     .aboutInfo .polaroid {
         float: none; 
         margin: 0 auto;
+    }
+
+    .polaroid > img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    h1 {
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 5rem;
+        font-weight: 100;
+    }
+
+    .aboutInfo > .polaroid {
+        width: 100%; 
+        margin: 0 auto;
+    }
+
+    .aboutInfo  .caption {
+        font-size: 3rem;
+        line-height: 2rem;
+        padding: 0;
+    }
+
+    .caption br {
+        display: none;
+    }
+
+    .aboutInfo  .aboutImg {
+        width: 100%; 
+        height: 100%;
+    }
+
+    .contact form {
+        padding: 2rem 2rem 2rem 0;
+    }
+    
+    .contactForm input,
+    .contactForm textarea {
+        width: 100%;    
+    }
+
+    .contactForm button {
+        width: 100%;
+    }
+}
+
+@media(max-width: 400px) {
+    .contact h2 {
+        font-size: 4rem;
     }
 }
